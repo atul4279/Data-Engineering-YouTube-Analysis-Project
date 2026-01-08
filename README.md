@@ -1,128 +1,128 @@
-#YouTube Data Analysis – End-to-End Data Engineering Project
-Project Overview
+📊 YouTube Data Analysis
+End-to-End Data Engineering Project
+🔍 Project Overview
 
-This project demonstrates an end-to-end data engineering pipeline built on AWS to analyze YouTube Trending Video data. The goal is to identify patterns and factors that influence video popularity—such as views, likes, comments, categories, and regions—to support data-driven advertising and content strategy decisions.
+    Built a complete end-to-end data engineering pipeline using AWS
+    
+    Analyzed YouTube Trending Videos data to understand video popularity
+    
+    Converted raw data into analytics-ready insights for business decision-making
 
-The project covers the complete lifecycle of data engineering: data ingestion, storage, cataloging, transformation, querying, and visualization.
+🎯 Business Objective
 
-#Business Objective
+    Identify factors that make a video trend on YouTube
+    
+    Analyze top performing categories
+    
+    Compare engagement metrics across regions
+    
+    Support YouTube advertising strategy
 
-A company planning to invest in YouTube advertising wants to understand:
+📁 Dataset
 
-What type of videos trend on YouTube
+    Source: Kaggle – YouTube Trending Videos Dataset
+    
+    File Types:
+    
+    CSV → Video statistics (views, likes, comments)
+    
+    JSON → Video category mapping
+    
+    Regions Covered:
+    
+    US, Canada, Germany, France, India, Russia, Japan
 
-Which categories perform best across regions
+🏗️ Architecture (AWS)
+    Cloud Services Used
+    
+    Amazon S3 – Data Lake (raw & processed data)
+    
+    AWS IAM – User & role management
+    
+    AWS Glue
+    
+    Crawlers for schema discovery
+    
+    Glue Data Catalog for metadata
+    
+    Spark-based ETL jobs
+    
+    Amazon Athena – SQL queries on S3
+    
+    AWS CLI – Programmatic AWS access
 
-How user engagement metrics impact popularity
+🔄 Data Pipeline Workflow
 
-This project helps answer those questions by converting raw YouTube data into analytics-ready insights.
+    Ingest raw CSV and JSON files into Amazon S3
+    
+    Organize data by region and data type
+    
+    Run AWS Glue Crawlers to generate metadata
+    
+    Perform ETL transformations using Glue (Spark)
+    
+    Query transformed data using Amazon Athena
+    
+    Build dashboards and reports
 
-Dataset
+🔐 Security Best Practices
 
-Source: Kaggle – YouTube Trending Videos Dataset
+    IAM users created with least privilege access
+    
+    IAM roles used for AWS service interaction
+    
+    Root account protected using MFA
+    
+    Server-side encryption enabled in S3
 
-Data Types:
+📈 Insights Generated
 
-CSV files: Video statistics (views, likes, comments, shares) by country
+    Most popular video categories
+    
+    Engagement patterns (likes, comments, views)
+    
+    Regional comparison of trending content
+    
+    Data-driven inputs for ad optimization
 
-JSON files: Video category mappings
+🧠 Skills & Concepts Learned
 
-Data includes multiple regions such as US, Canada, Germany, France, India, etc.
+    Big Data fundamentals
+    
+    Data Lake vs Data Warehouse
+    
+    Cloud vs On-Premise systems
+    
+    Scalable ETL pipeline design
+    
+    Metadata cataloging
+    
+    Serverless analytics
 
-Architecture
+🚀 How to Run the Project
 
-Cloud Platform: AWS
+      Create AWS account
+      
+      Configure AWS CLI
+      
+      Create S3 bucket
+      
+      Upload dataset
+      
+      Create Glue Crawlers
+      
+      Run ETL jobs
+      
+      Query data using Athena
+      
+      Build dashboards
 
-Services Used:
-
-Amazon S3 – Data Lake (raw & processed data storage)
-
-AWS IAM – Access control and security
-
-AWS Glue
-
-Crawlers for schema discovery
-
-Glue Data Catalog for metadata management
-
-Spark-based ETL jobs
-
-Amazon Athena – SQL-based analytics on S3 data
-
-AWS CLI – Programmatic interaction with AWS
-
-Data Pipeline Flow
-
-Ingest raw CSV and JSON files into Amazon S3
-
-Organize data by region and data type
-
-Use AWS Glue Crawlers to extract metadata and build tables
-
-Perform ETL transformations using AWS Glue (Spark)
-
-Query transformed data using Amazon Athena
-
-Use query results to build analytical dashboards
-
-Security Best Practices
-
-IAM users created with least privilege principle
-
-IAM roles used for service-to-service access
-
-Root account protected with MFA
-
-Data encrypted at rest in S3
-
-Key Insights Enabled
-
-Identification of top trending video categories
-
-Regional comparison of video performance
-
-Analysis of engagement metrics driving popularity
-
-Actionable insights for YouTube ad campaign optimization
-
-Key Concepts Learned
-
-Big Data fundamentals
-
-Data Lake vs Data Warehouse
-
-Cloud vs On-Premise systems
-
-Scalable ETL pipeline design
-
-Metadata management and cataloging
-
-Serverless analytics using Athena
-
-How to Run the Project
-
-Create an AWS account
-
-Configure AWS CLI using IAM credentials
-
-Create an S3 bucket for raw data
-
-Upload Kaggle dataset to S3
-
-Create AWS Glue Crawlers
-
-Run ETL jobs using AWS Glue
-
-Query data using Amazon Athena
-
-Build dashboards using query results
-
-Future Enhancements
+🔮 Future Enhancements
 
 Incremental data ingestion
 
-Automation using AWS Step Functions
+Workflow automation
 
-Integration with real-time streaming data
+Real-time streaming integration
 
-Advanced analytics and ML models
+ML-based trend prediction
