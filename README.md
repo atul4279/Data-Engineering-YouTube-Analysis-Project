@@ -1,11 +1,11 @@
-YouTube Data Analysis – End-to-End Data Engineering Project
+#YouTube Data Analysis – End-to-End Data Engineering Project
 Project Overview
 
 This project demonstrates an end-to-end data engineering pipeline built on AWS to analyze YouTube Trending Video data. The goal is to identify patterns and factors that influence video popularity—such as views, likes, comments, categories, and regions—to support data-driven advertising and content strategy decisions.
 
 The project covers the complete lifecycle of data engineering: data ingestion, storage, cataloging, transformation, querying, and visualization.
 
-Business Objective
+#Business Objective
 
 A company planning to invest in YouTube advertising wants to understand:
 
